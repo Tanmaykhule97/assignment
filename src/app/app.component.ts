@@ -1,6 +1,5 @@
 import { Component,OnInit } from '@angular/core';
-   import * as moment from 'moment-timezone';
-import { MatchService } from './match.service';
+
 
 @Component({
   selector: 'app-root',
@@ -8,37 +7,10 @@ import { MatchService } from './match.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  handleAction(){
-    alert("hello")
+  ngOnInit(): void {
+    throw new Error('Method not implemented.');
   }
-  [x: string]: any;
-  title = 'my-app';
-  weekdays:any[] = [];
-
-  
-constructor(private matchdate:MatchService){}
-trendproduct:any;
-ngOnInit(): void {
-  this.matchdate.trendingproduct().subscribe((data: any)=>{
-    console.log(data)
-    this.trendproduct=data;
-  })
-
-
-
-    let days:any = [];
-    for (let i = 1; i <= 7; i++) {
-      days.push( moment().add(i, 'days').format('DD MM YYYY') )
-    
-    }console.log(days);
-    this.weekdays = days;
-    }
-
-    // public onClick(): void {
-    //   console.log('https://cms.bettorlogic.com/api/BetBuilder/GetFixtures?sports=1');
-      
-  
-    //  }
+ 
     
 
     }

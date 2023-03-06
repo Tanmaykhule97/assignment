@@ -5,16 +5,19 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import { EventdateComponent } from './eventdate/eventdate.component';
+import { HomepageComponent } from './homepage/homepage.component';
 
 @NgModule({
   declarations: [
     AppComponent,
 
-    EventdateComponent
+    EventdateComponent,
+     HomepageComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
+    AppRoutingModule,  
+   
     HttpClientModule
   ],
   providers: [],
