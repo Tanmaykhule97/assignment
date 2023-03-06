@@ -1,7 +1,12 @@
 .cards{
     display: flex;
     justify-content: space-around;
+    
 }
 .onchangecursor{
     cursor: pointer;
+    
+}
+.fff{
+    font-size: 19px;
 }
